@@ -1,0 +1,8 @@
+create_csv <- function(x,y){
+  data <- data.frame(x = c(7, seq(from = 1, to = 100, by = 1)),
+                     y = rnorm(n = 101, mean = 0, sd = sqrt(0.001)))
+  return(write.csv(data, "assignment5_file.csv", row.names = FALSE))
+}
+
+create_csv(x,y)
+^
